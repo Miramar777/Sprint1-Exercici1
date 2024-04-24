@@ -1,0 +1,133 @@
+*{
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: fit-content ;
+    max-width: 1200px;
+    margin: auto;
+}
+.header {
+    background-color: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background-color: #2d3f59;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px; 
+    align-items: 100%;
+}
+
+.logo {
+    background-color: rgb(242,63,82);
+    flex: 1 1 auto;
+    height: 40px; 
+    
+}
+
+.logo:hover
+{
+    background-color:rgb(255, 0, 225);
+    transform: scale(1.2);
+}
+.nav {
+    background-color: rgb(242,63,82);
+    flex: 3 1 auto;
+    height: 40px; 
+}
+.social {
+    background-color: rgb(242,63,82);
+    flex: 1 1 auto;
+    height: 40px; 
+}
+
+.main-banner {
+    background-color:#ff8a06;
+}
+.banner {
+   background-color:#fed700;
+   padding: 3px;
+   height: 70px;
+}
+.section {
+background-color: black;
+display: flex;
+}
+.articles {
+    background-color:#4d4f67 ;
+    flex:2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article {
+    background-color: #1f6cb0;
+    flex: 1 1 40%;
+}
+.navegacion {
+    background-color: #72a2c6;
+    flex: 1 1 100%;
+}
+.aside {
+    background-color: #f63f51;
+    flex: 1 1 auto;
+}
+.publicidad {
+    background-color: #fed700;
+    display: flex;
+    align-items: 100%;
+}
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.pie {
+    background-color: #f0e78c;
+    width: 100%;
+}
+
+
+
+@media (max-width: 992px){
+    body {
+    background-color: #b1b0b4;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+} 
+.section{
+    flex-direction: column;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+}
+.publicidad{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+}
+
+}
+@media (max-width: 768px){
+    body {
+        background-color: #f5b766;
+    }
+    .articles{
+        flex-direction: column;
+    }
+}
+
+
+
+
